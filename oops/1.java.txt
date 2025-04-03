@@ -1,0 +1,45 @@
+class main
+{
+	public static void main(String[]args)
+	{
+		child c1=new child(10);
+	}
+}
+class Grandparent
+{
+	Grandparent(int x)
+	{
+		System.out.println("i am grandparent 1 parameter");
+	}
+	Grandparent(int x,double y)
+	{
+		System.out.println("i am grandparent 2 parameter");
+	}
+}
+class parent
+{
+	parent()
+	{
+		System.out.println("i am parent default");
+	}
+	parent(int x)
+	{
+		System.out.println("i am parent 1 parameter");
+	}
+}
+class child
+{
+	child()
+	{
+		System.out.println("i am child default");
+	}
+	child(int x)
+	{
+		System.out.println("i am child 1 parameter");
+	}
+	child(int x,char c)
+	{
+		System.out.println("i am child 2 parameter");
+	}
+
+}

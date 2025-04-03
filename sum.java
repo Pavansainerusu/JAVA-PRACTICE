@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Myclass
+{
+	public static void main(String[]args)
+	{
+	Scanner s=new Scanner(System.in);
+	int a=s.nextInt();
+	int sum=0,pro=1;
+	{
+	while(a!=0)
+	{
+	int rem=a%10;
+	sum+=rem;
+	pro*=rem;
+	a/=10;
+	}
+	System.out.println("sum is"+sum);
+	System.out.println("pro is"+pro);
+}
+}
+}

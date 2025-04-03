@@ -1,0 +1,991 @@
+Microsoft Windows [Version 10.0.26100.3194]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>venv\Scripts\activate
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install -r requirements.txt
+Collecting en_core_web_sm@ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001BBF572BDF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001BBF57671C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001BBF57673D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001BBF57675E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001BBF57677F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (Caused by NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001BBF5767A00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+WARNING: You are using pip version 21.2.3; however, version 25.0.1 is available.
+You should consider upgrading via the 'C:\Users\pavan\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>C:\Users\pavan\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (21.2.3)
+Collecting pip
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000140839F0D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000140839F0F70>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000140839F1180>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000140839F1390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000140839F15A0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl
+  Downloading pip-25.0.1-py3-none-any.whl (1.8 MB)
+     |████████████████████████████████| 1.8 MB 1.6 MB/s
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.3
+    Uninstalling pip-21.2.3:
+      Successfully uninstalled pip-21.2.3
+Successfully installed pip-25.0.1
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 2, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install pandas
+Collecting pandas
+  Downloading pandas-2.2.3-cp310-cp310-win_amd64.whl.metadata (19 kB)
+Collecting numpy>=1.22.4 (from pandas)
+  Downloading numpy-2.2.4-cp310-cp310-win_amd64.whl.metadata (60 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading pandas-2.2.3-cp310-cp310-win_amd64.whl (11.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 6.1 MB/s eta 0:00:00
+Downloading numpy-2.2.4-cp310-cp310-win_amd64.whl (12.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.9/12.9 MB 7.7 MB/s eta 0:00:00
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: pytz, tzdata, six, numpy, python-dateutil, pandas
+Successfully installed numpy-2.2.4 pandas-2.2.3 python-dateutil-2.9.0.post0 pytz-2025.2 six-1.17.0 tzdata-2025.2
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 4, in <module>
+    from nltk.corpus import wordnet
+ModuleNotFoundError: No module named 'nltk'
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install nltk
+Collecting nltk
+  Using cached nltk-3.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting click (from nltk)
+  Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting joblib (from nltk)
+  Using cached joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting regex>=2021.8.3 (from nltk)
+  Downloading regex-2024.11.6-cp310-cp310-win_amd64.whl.metadata (41 kB)
+Collecting tqdm (from nltk)
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting colorama (from click->nltk)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Using cached nltk-3.9.1-py3-none-any.whl (1.5 MB)
+Downloading regex-2024.11.6-cp310-cp310-win_amd64.whl (274 kB)
+Using cached click-8.1.8-py3-none-any.whl (98 kB)
+Using cached joblib-1.4.2-py3-none-any.whl (301 kB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Installing collected packages: regex, joblib, colorama, tqdm, click, nltk
+Successfully installed click-8.1.8 colorama-0.4.6 joblib-1.4.2 nltk-3.9.1 regex-2024.11.6 tqdm-4.67.1
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 8, in <module>
+    from spacy.lang.en.stop_words import STOP_WORDS
+ModuleNotFoundError: No module named 'spacy'
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install spacy
+Collecting spacy
+  Downloading spacy-3.8.4-cp310-cp310-win_amd64.whl.metadata (27 kB)
+Collecting spacy-legacy<3.1.0,>=3.0.11 (from spacy)
+  Downloading spacy_legacy-3.0.12-py2.py3-none-any.whl.metadata (2.8 kB)
+Collecting spacy-loggers<2.0.0,>=1.0.0 (from spacy)
+  Downloading spacy_loggers-1.0.5-py3-none-any.whl.metadata (23 kB)
+Collecting murmurhash<1.1.0,>=0.28.0 (from spacy)
+  Downloading murmurhash-1.0.12-cp310-cp310-win_amd64.whl.metadata (2.2 kB)
+Collecting cymem<2.1.0,>=2.0.2 (from spacy)
+  Downloading cymem-2.0.11-cp310-cp310-win_amd64.whl.metadata (8.8 kB)
+Collecting preshed<3.1.0,>=3.0.2 (from spacy)
+  Downloading preshed-3.0.9-cp310-cp310-win_amd64.whl.metadata (2.2 kB)
+Collecting thinc<8.4.0,>=8.3.4 (from spacy)
+  Downloading thinc-8.3.4-cp310-cp310-win_amd64.whl.metadata (15 kB)
+Collecting wasabi<1.2.0,>=0.9.1 (from spacy)
+  Downloading wasabi-1.1.3-py3-none-any.whl.metadata (28 kB)
+Collecting srsly<3.0.0,>=2.4.3 (from spacy)
+  Downloading srsly-2.5.1-cp310-cp310-win_amd64.whl.metadata (20 kB)
+Collecting catalogue<2.1.0,>=2.0.6 (from spacy)
+  Downloading catalogue-2.0.10-py3-none-any.whl.metadata (14 kB)
+Collecting weasel<0.5.0,>=0.1.0 (from spacy)
+  Downloading weasel-0.4.1-py3-none-any.whl.metadata (4.6 kB)
+Collecting typer<1.0.0,>=0.3.0 (from spacy)
+  Downloading typer-0.15.2-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: tqdm<5.0.0,>=4.38.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from spacy) (4.67.1)
+Requirement already satisfied: numpy>=1.19.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from spacy) (2.2.4)
+Collecting requests<3.0.0,>=2.13.0 (from spacy)
+  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 (from spacy)
+  Downloading pydantic-2.10.6-py3-none-any.whl.metadata (30 kB)
+Collecting jinja2 (from spacy)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: setuptools in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from spacy) (57.4.0)
+Collecting packaging>=20.0 (from spacy)
+  Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting langcodes<4.0.0,>=3.2.0 (from spacy)
+  Downloading langcodes-3.5.0-py3-none-any.whl.metadata (29 kB)
+Collecting language-data>=1.2 (from langcodes<4.0.0,>=3.2.0->spacy)
+  Downloading language_data-1.3.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy)
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.27.2 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy)
+  Downloading pydantic_core-2.27.2-cp310-cp310-win_amd64.whl.metadata (6.7 kB)
+Collecting typing-extensions>=4.12.2 (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy)
+  Downloading typing_extensions-4.13.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting charset-normalizer<4,>=2 (from requests<3.0.0,>=2.13.0->spacy)
+  Downloading charset_normalizer-3.4.1-cp310-cp310-win_amd64.whl.metadata (36 kB)
+Collecting idna<4,>=2.5 (from requests<3.0.0,>=2.13.0->spacy)
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.13.0->spacy)
+  Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests<3.0.0,>=2.13.0->spacy)
+  Downloading certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+Collecting blis<1.3.0,>=1.2.0 (from thinc<8.4.0,>=8.3.4->spacy)
+  Downloading blis-1.2.0-cp310-cp310-win_amd64.whl.metadata (7.9 kB)
+Collecting confection<1.0.0,>=0.0.1 (from thinc<8.4.0,>=8.3.4->spacy)
+  Downloading confection-0.1.5-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: colorama in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from tqdm<5.0.0,>=4.38.0->spacy) (0.4.6)
+Requirement already satisfied: click>=8.0.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from typer<1.0.0,>=0.3.0->spacy) (8.1.8)
+Collecting shellingham>=1.3.0 (from typer<1.0.0,>=0.3.0->spacy)
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=10.11.0 (from typer<1.0.0,>=0.3.0->spacy)
+  Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+Collecting cloudpathlib<1.0.0,>=0.7.0 (from weasel<0.5.0,>=0.1.0->spacy)
+  Downloading cloudpathlib-0.21.0-py3-none-any.whl.metadata (14 kB)
+Collecting smart-open<8.0.0,>=5.2.1 (from weasel<0.5.0,>=0.1.0->spacy)
+  Downloading smart_open-7.1.0-py3-none-any.whl.metadata (24 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->spacy)
+  Downloading MarkupSafe-3.0.2-cp310-cp310-win_amd64.whl.metadata (4.1 kB)
+Collecting marisa-trie>=1.1.0 (from language-data>=1.2->langcodes<4.0.0,>=3.2.0->spacy)
+  Downloading marisa_trie-1.2.1-cp310-cp310-win_amd64.whl.metadata (9.3 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy)
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy)
+  Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting wrapt (from smart-open<8.0.0,>=5.2.1->weasel<0.5.0,>=0.1.0->spacy)
+  Downloading wrapt-1.17.2-cp310-cp310-win_amd64.whl.metadata (6.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading spacy-3.8.4-cp310-cp310-win_amd64.whl (12.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 9.2 MB/s eta 0:00:00
+Downloading catalogue-2.0.10-py3-none-any.whl (17 kB)
+Downloading cymem-2.0.11-cp310-cp310-win_amd64.whl (39 kB)
+Downloading langcodes-3.5.0-py3-none-any.whl (182 kB)
+Downloading murmurhash-1.0.12-cp310-cp310-win_amd64.whl (25 kB)
+Downloading packaging-24.2-py3-none-any.whl (65 kB)
+Downloading preshed-3.0.9-cp310-cp310-win_amd64.whl (122 kB)
+Downloading pydantic-2.10.6-py3-none-any.whl (431 kB)
+Downloading pydantic_core-2.27.2-cp310-cp310-win_amd64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 8.5 MB/s eta 0:00:00
+Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+Downloading spacy_legacy-3.0.12-py2.py3-none-any.whl (29 kB)
+Downloading spacy_loggers-1.0.5-py3-none-any.whl (22 kB)
+Downloading srsly-2.5.1-cp310-cp310-win_amd64.whl (632 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 632.3/632.3 kB 11.9 MB/s eta 0:00:00
+Downloading thinc-8.3.4-cp310-cp310-win_amd64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 7.2 MB/s eta 0:00:00
+Downloading typer-0.15.2-py3-none-any.whl (45 kB)
+Downloading wasabi-1.1.3-py3-none-any.whl (27 kB)
+Downloading weasel-0.4.1-py3-none-any.whl (50 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading blis-1.2.0-cp310-cp310-win_amd64.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 9.4 MB/s eta 0:00:00
+Downloading certifi-2025.1.31-py3-none-any.whl (166 kB)
+Downloading charset_normalizer-3.4.1-cp310-cp310-win_amd64.whl (102 kB)
+Downloading cloudpathlib-0.21.0-py3-none-any.whl (52 kB)
+Downloading confection-0.1.5-py3-none-any.whl (35 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Downloading language_data-1.3.0-py3-none-any.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 9.6 MB/s eta 0:00:00
+Downloading MarkupSafe-3.0.2-cp310-cp310-win_amd64.whl (15 kB)
+Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading smart_open-7.1.0-py3-none-any.whl (61 kB)
+Downloading typing_extensions-4.13.0-py3-none-any.whl (45 kB)
+Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+Downloading marisa_trie-1.2.1-cp310-cp310-win_amd64.whl (151 kB)
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 6.9 MB/s eta 0:00:00
+Downloading wrapt-1.17.2-cp310-cp310-win_amd64.whl (38 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: cymem, wrapt, wasabi, urllib3, typing-extensions, spacy-loggers, spacy-legacy, shellingham, pygments, packaging, murmurhash, mdurl, MarkupSafe, marisa-trie, idna, charset-normalizer, certifi, catalogue, blis, annotated-types, srsly, smart-open, requests, pydantic-core, preshed, markdown-it-py, language-data, jinja2, cloudpathlib, rich, pydantic, langcodes, typer, confection, weasel, thinc, spacy
+Successfully installed MarkupSafe-3.0.2 annotated-types-0.7.0 blis-1.2.0 catalogue-2.0.10 certifi-2025.1.31 charset-normalizer-3.4.1 cloudpathlib-0.21.0 confection-0.1.5 cymem-2.0.11 idna-3.10 jinja2-3.1.6 langcodes-3.5.0 language-data-1.3.0 marisa-trie-1.2.1 markdown-it-py-3.0.0 mdurl-0.1.2 murmurhash-1.0.12 packaging-24.2 preshed-3.0.9 pydantic-2.10.6 pydantic-core-2.27.2 pygments-2.19.1 requests-2.32.3 rich-13.9.4 shellingham-1.5.4 smart-open-7.1.0 spacy-3.8.4 spacy-legacy-3.0.12 spacy-loggers-1.0.5 srsly-2.5.1 thinc-8.3.4 typer-0.15.2 typing-extensions-4.13.0 urllib3-2.3.0 wasabi-1.1.3 weasel-0.4.1 wrapt-1.17.2
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 11, in <module>
+    from flask import Flask, render_template, request, session, jsonify, url_for, redirect
+ModuleNotFoundError: No module named 'flask'
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install flask
+Collecting flask
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001A93AEA9150>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001A93AEA9420>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001A93AEA95D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001A93AEA9780>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001A93AEA9930>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Max retries exceeded with url: /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata (Caused by NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001A93AEA9B10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install flask
+Collecting flask
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000169F4D591B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000169F4D59480>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000169F4D59630>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000169F4D597E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000169F4D59990>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Max retries exceeded with url: /packages/af/47/93213ee66ef8fae3b93b3e29206f6b251e65c97bd91d8e1c5596ef15af0a/flask-3.1.0-py3-none-any.whl.metadata (Caused by NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000169F4D59B70>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install flask
+Collecting flask
+  Downloading flask-3.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting Werkzeug>=3.1 (from flask)
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: Jinja2>=3.1.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from flask) (3.1.6)
+Collecting itsdangerous>=2.2 (from flask)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Requirement already satisfied: click>=8.1.3 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from flask) (8.1.8)
+Collecting blinker>=1.9 (from flask)
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Requirement already satisfied: colorama in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from click>=8.1.3->flask) (0.4.6)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from Jinja2>=3.1.2->flask) (3.0.2)
+Downloading flask-3.1.0-py3-none-any.whl (102 kB)
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Installing collected packages: Werkzeug, itsdangerous, blinker, flask
+Successfully installed Werkzeug-3.1.3 blinker-1.9.0 flask-3.1.0 itsdangerous-2.2.0
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 12, in <module>
+    from transformers import AutoTokenizer, AutoModel
+ModuleNotFoundError: No module named 'transformers'
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install transforners
+ERROR: Could not find a version that satisfies the requirement transforners (from versions: none)
+ERROR: No matching distribution found for transforners
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install transforner
+ERROR: Could not find a version that satisfies the requirement transforner (from versions: none)
+ERROR: No matching distribution found for transforner
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+C:\Users\pavan\Desktop\MEDICAL was unexpected at this time.
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>Traceback (most recent call last):
+'Traceback' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 12, in <module>
+The syntax of the command is incorrect.
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>    from transformers import AutoTokenizer, AutoModel
+'from' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>ModuleNotFoundError: No module named 'transformers'
+'ModuleNotFoundError:' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install transformers
+Collecting transformers
+  Downloading transformers-4.50.2-py3-none-any.whl.metadata (39 kB)
+Collecting filelock (from transformers)
+  Downloading filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting huggingface-hub<1.0,>=0.26.0 (from transformers)
+  Downloading huggingface_hub-0.29.3-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: numpy>=1.17 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers) (2.2.4)
+Requirement already satisfied: packaging>=20.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers) (24.2)
+Collecting pyyaml>=5.1 (from transformers)
+  Downloading PyYAML-6.0.2-cp310-cp310-win_amd64.whl.metadata (2.1 kB)
+Requirement already satisfied: regex!=2019.12.17 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers) (2024.11.6)
+Requirement already satisfied: requests in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers) (2.32.3)
+Collecting tokenizers<0.22,>=0.21 (from transformers)
+  Downloading tokenizers-0.21.1-cp39-abi3-win_amd64.whl.metadata (6.9 kB)
+Collecting safetensors>=0.4.3 (from transformers)
+  Downloading safetensors-0.5.3-cp38-abi3-win_amd64.whl.metadata (3.9 kB)
+Requirement already satisfied: tqdm>=4.27 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers) (4.67.1)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<1.0,>=0.26.0->transformers)
+  Downloading fsspec-2025.3.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from huggingface-hub<1.0,>=0.26.0->transformers) (4.13.0)
+Requirement already satisfied: colorama in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from tqdm>=4.27->transformers) (0.4.6)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from requests->transformers) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from requests->transformers) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from requests->transformers) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from requests->transformers) (2025.1.31)
+Downloading transformers-4.50.2-py3-none-any.whl (10.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 6.0 MB/s eta 0:00:00
+Downloading huggingface_hub-0.29.3-py3-none-any.whl (468 kB)
+Downloading PyYAML-6.0.2-cp310-cp310-win_amd64.whl (161 kB)
+Downloading safetensors-0.5.3-cp38-abi3-win_amd64.whl (308 kB)
+Downloading tokenizers-0.21.1-cp39-abi3-win_amd64.whl (2.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 5.8 MB/s eta 0:00:00
+Downloading filelock-3.18.0-py3-none-any.whl (16 kB)
+Downloading fsspec-2025.3.0-py3-none-any.whl (193 kB)
+Installing collected packages: safetensors, pyyaml, fsspec, filelock, huggingface-hub, tokenizers, transformers
+Successfully installed filelock-3.18.0 fsspec-2025.3.0 huggingface-hub-0.29.3 pyyaml-6.0.2 safetensors-0.5.3 tokenizers-0.21.1 transformers-4.50.2
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 16, in <module>
+    from fuzzywuzzy import fuzz
+ModuleNotFoundError: No module named 'fuzzywuzzy'
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install fuzzywuzzy
+Collecting fuzzywuzzy
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001F5CA4E7430>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/43/ff/74f23998ad2f93b945c0309f825be92e04e0348e062026998b5eefef4c33/fuzzywuzzy-0.18.0-py2.py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001F5CA4E7700>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/43/ff/74f23998ad2f93b945c0309f825be92e04e0348e062026998b5eefef4c33/fuzzywuzzy-0.18.0-py2.py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001F5CA4E78B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/43/ff/74f23998ad2f93b945c0309f825be92e04e0348e062026998b5eefef4c33/fuzzywuzzy-0.18.0-py2.py3-none-any.whl.metadata
+  Downloading fuzzywuzzy-0.18.0-py2.py3-none-any.whl.metadata (4.9 kB)
+Downloading fuzzywuzzy-0.18.0-py2.py3-none-any.whl (18 kB)
+Installing collected packages: fuzzywuzzy
+Successfully installed fuzzywuzzy-0.18.0
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\fuzzywuzzy\fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 17, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install torch
+Collecting torch
+  Downloading torch-2.6.0-cp310-cp310-win_amd64.whl.metadata (28 kB)
+Requirement already satisfied: filelock in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from torch) (3.18.0)
+Requirement already satisfied: typing-extensions>=4.10.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from torch) (4.13.0)
+Collecting networkx (from torch)
+  Downloading networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Requirement already satisfied: jinja2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from torch) (2025.3.0)
+Collecting sympy==1.13.1 (from torch)
+  Downloading sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from jinja2->torch) (3.0.2)
+Downloading torch-2.6.0-cp310-cp310-win_amd64.whl (204.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 204.2/204.2 MB 9.0 MB/s eta 0:00:00
+Downloading sympy-1.13.1-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 9.7 MB/s eta 0:00:00
+Downloading networkx-3.4.2-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 9.4 MB/s eta 0:00:00
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 8.6 MB/s eta 0:00:00
+Installing collected packages: mpmath, sympy, networkx, torch
+Successfully installed mpmath-1.3.0 networkx-3.4.2 sympy-1.13.1 torch-2.6.0
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\fuzzywuzzy\fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 18, in <module>
+    from sentence_transformers import SentenceTransformer, util
+ModuleNotFoundError: No module named 'sentence_transformers'
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install sentence_transformers
+Collecting sentence_transformers
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001AB54B15000>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/6d/8a/02de456f970bb53fc456b266d59d983a255de00cee648ab318c1f62d9aa1/sentence_transformers-4.0.1-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001AB54B152D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/6d/8a/02de456f970bb53fc456b266d59d983a255de00cee648ab318c1f62d9aa1/sentence_transformers-4.0.1-py3-none-any.whl.metadata
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001AB54B15480>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/6d/8a/02de456f970bb53fc456b266d59d983a255de00cee648ab318c1f62d9aa1/sentence_transformers-4.0.1-py3-none-any.whl.metadata
+  Downloading sentence_transformers-4.0.1-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: transformers<5.0.0,>=4.41.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from sentence_transformers) (4.50.2)
+Requirement already satisfied: tqdm in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from sentence_transformers) (4.67.1)
+Requirement already satisfied: torch>=1.11.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from sentence_transformers) (2.6.0)
+Collecting scikit-learn (from sentence_transformers)
+  Downloading scikit_learn-1.6.1-cp310-cp310-win_amd64.whl.metadata (15 kB)
+Collecting scipy (from sentence_transformers)
+  Downloading scipy-1.15.2-cp310-cp310-win_amd64.whl.metadata (60 kB)
+Requirement already satisfied: huggingface-hub>=0.20.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from sentence_transformers) (0.29.3)
+Collecting Pillow (from sentence_transformers)
+  Downloading pillow-11.1.0-cp310-cp310-win_amd64.whl.metadata (9.3 kB)
+Requirement already satisfied: typing_extensions>=4.5.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from sentence_transformers) (4.13.0)
+Requirement already satisfied: filelock in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from huggingface-hub>=0.20.0->sentence_transformers) (3.18.0)
+Requirement already satisfied: fsspec>=2023.5.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from huggingface-hub>=0.20.0->sentence_transformers) (2025.3.0)
+Requirement already satisfied: packaging>=20.9 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from huggingface-hub>=0.20.0->sentence_transformers) (24.2)
+Requirement already satisfied: pyyaml>=5.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from huggingface-hub>=0.20.0->sentence_transformers) (6.0.2)
+Requirement already satisfied: requests in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from huggingface-hub>=0.20.0->sentence_transformers) (2.32.3)
+Requirement already satisfied: networkx in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from torch>=1.11.0->sentence_transformers) (3.4.2)
+Requirement already satisfied: jinja2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from torch>=1.11.0->sentence_transformers) (3.1.6)
+Requirement already satisfied: sympy==1.13.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from torch>=1.11.0->sentence_transformers) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from sympy==1.13.1->torch>=1.11.0->sentence_transformers) (1.3.0)
+Requirement already satisfied: colorama in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from tqdm->sentence_transformers) (0.4.6)
+Requirement already satisfied: numpy>=1.17 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence_transformers) (2.2.4)
+Requirement already satisfied: regex!=2019.12.17 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence_transformers) (2024.11.6)
+Requirement already satisfied: tokenizers<0.22,>=0.21 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence_transformers) (0.21.1)
+Requirement already satisfied: safetensors>=0.4.3 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence_transformers) (0.5.3)
+Requirement already satisfied: joblib>=1.2.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from scikit-learn->sentence_transformers) (1.4.2)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn->sentence_transformers)
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from jinja2->torch>=1.11.0->sentence_transformers) (3.0.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from requests->huggingface-hub>=0.20.0->sentence_transformers) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from requests->huggingface-hub>=0.20.0->sentence_transformers) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from requests->huggingface-hub>=0.20.0->sentence_transformers) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from requests->huggingface-hub>=0.20.0->sentence_transformers) (2025.1.31)
+Downloading sentence_transformers-4.0.1-py3-none-any.whl (340 kB)
+Downloading pillow-11.1.0-cp310-cp310-win_amd64.whl (2.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 3.6 MB/s eta 0:00:00
+Downloading scikit_learn-1.6.1-cp310-cp310-win_amd64.whl (11.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 4.4 MB/s eta 0:00:00
+Downloading scipy-1.15.2-cp310-cp310-win_amd64.whl (41.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 MB 7.5 MB/s eta 0:00:00
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Installing collected packages: threadpoolctl, scipy, Pillow, scikit-learn, sentence_transformers
+Successfully installed Pillow-11.1.0 scikit-learn-1.6.1 scipy-1.15.2 sentence_transformers-4.0.1 threadpoolctl-3.6.0
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\fuzzywuzzy\fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 43, in <module>
+    nlp = spacy.load('en_core_web_sm')
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\spacy\__init__.py", line 51, in load
+    return util.load_model(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\spacy\util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install -r requirements.txt
+Collecting en_core_web_sm@ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85 (from -r requirements.txt (line 14))
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 7.4 MB/s eta 0:00:00
+Requirement already satisfied: annotated-types==0.7.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 1)) (0.7.0)
+Requirement already satisfied: blinker==1.9.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 2)) (1.9.0)
+Requirement already satisfied: blis==1.2.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 3)) (1.2.0)
+Requirement already satisfied: catalogue==2.0.10 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 4)) (2.0.10)
+Requirement already satisfied: certifi==2025.1.31 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 5)) (2025.1.31)
+Requirement already satisfied: charset-normalizer==3.4.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 6)) (3.4.1)
+Requirement already satisfied: click==8.1.8 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 7)) (8.1.8)
+Collecting cloudpathlib==0.20.0 (from -r requirements.txt (line 8))
+  Downloading cloudpathlib-0.20.0-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: colorama==0.4.6 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 9)) (0.4.6)
+Requirement already satisfied: confection==0.1.5 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 10)) (0.1.5)
+Collecting contourpy==1.3.1 (from -r requirements.txt (line 11))
+  Downloading contourpy-1.3.1-cp310-cp310-win_amd64.whl.metadata (5.4 kB)
+Collecting cycler==0.12.1 (from -r requirements.txt (line 12))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: cymem==2.0.11 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 13)) (2.0.11)
+Collecting filelock==3.17.0 (from -r requirements.txt (line 15))
+  Downloading filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: Flask==3.1.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 16)) (3.1.0)
+Collecting fonttools==4.56.0 (from -r requirements.txt (line 17))
+  Downloading fonttools-4.56.0-cp310-cp310-win_amd64.whl.metadata (103 kB)
+Collecting fsspec==2025.2.0 (from -r requirements.txt (line 18))
+  Downloading fsspec-2025.2.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: fuzzywuzzy==0.18.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 19)) (0.18.0)
+Collecting huggingface-hub==0.29.1 (from -r requirements.txt (line 20))
+  Downloading huggingface_hub-0.29.1-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: idna==3.10 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 21)) (3.10)
+Collecting imbalanced-learn==0.13.0 (from -r requirements.txt (line 22))
+  Downloading imbalanced_learn-0.13.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting imblearn==0.0 (from -r requirements.txt (line 23))
+  Downloading imblearn-0.0-py2.py3-none-any.whl.metadata (355 bytes)
+Requirement already satisfied: itsdangerous==2.2.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 24)) (2.2.0)
+Collecting Jinja2==3.1.5 (from -r requirements.txt (line 25))
+  Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: joblib==1.4.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 26)) (1.4.2)
+Collecting kiwisolver==1.4.8 (from -r requirements.txt (line 27))
+  Downloading kiwisolver-1.4.8-cp310-cp310-win_amd64.whl.metadata (6.3 kB)
+Requirement already satisfied: langcodes==3.5.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 28)) (3.5.0)
+Requirement already satisfied: language_data==1.3.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 29)) (1.3.0)
+Collecting Levenshtein==0.26.1 (from -r requirements.txt (line 30))
+  Downloading levenshtein-0.26.1-cp310-cp310-win_amd64.whl.metadata (3.2 kB)
+Requirement already satisfied: marisa-trie==1.2.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 31)) (1.2.1)
+Requirement already satisfied: markdown-it-py==3.0.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 32)) (3.0.0)
+Requirement already satisfied: MarkupSafe==3.0.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 33)) (3.0.2)
+Collecting matplotlib==3.10.1 (from -r requirements.txt (line 34))
+  Downloading matplotlib-3.10.1-cp310-cp310-win_amd64.whl.metadata (11 kB)
+Requirement already satisfied: mdurl==0.1.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 35)) (0.1.2)
+Requirement already satisfied: mpmath==1.3.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 36)) (1.3.0)
+Requirement already satisfied: murmurhash==1.0.12 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 37)) (1.0.12)
+Requirement already satisfied: networkx==3.4.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 38)) (3.4.2)
+Requirement already satisfied: nltk==3.9.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 39)) (3.9.1)
+Collecting numpy==2.2.3 (from -r requirements.txt (line 40))
+  Downloading numpy-2.2.3-cp310-cp310-win_amd64.whl.metadata (60 kB)
+Requirement already satisfied: packaging==24.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 41)) (24.2)
+Requirement already satisfied: pandas==2.2.3 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 42)) (2.2.3)
+Requirement already satisfied: pillow==11.1.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 43)) (11.1.0)
+Requirement already satisfied: preshed==3.0.9 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 44)) (3.0.9)
+Requirement already satisfied: pydantic==2.10.6 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 45)) (2.10.6)
+Requirement already satisfied: pydantic_core==2.27.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 46)) (2.27.2)
+Requirement already satisfied: Pygments==2.19.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 47)) (2.19.1)
+Collecting pyparsing==3.2.1 (from -r requirements.txt (line 48))
+  Downloading pyparsing-3.2.1-py3-none-any.whl.metadata (5.0 kB)
+Requirement already satisfied: python-dateutil==2.9.0.post0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 49)) (2.9.0.post0)
+Collecting python-Levenshtein==0.26.1 (from -r requirements.txt (line 50))
+  Downloading python_Levenshtein-0.26.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting pytz==2025.1 (from -r requirements.txt (line 51))
+  Downloading pytz-2025.1-py2.py3-none-any.whl.metadata (22 kB)
+Requirement already satisfied: PyYAML==6.0.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 52)) (6.0.2)
+Collecting RapidFuzz==3.12.1 (from -r requirements.txt (line 53))
+  Downloading rapidfuzz-3.12.1-cp310-cp310-win_amd64.whl.metadata (11 kB)
+Requirement already satisfied: regex==2024.11.6 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 54)) (2024.11.6)
+Requirement already satisfied: requests==2.32.3 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 55)) (2.32.3)
+Requirement already satisfied: rich==13.9.4 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 56)) (13.9.4)
+Requirement already satisfied: safetensors==0.5.3 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 57)) (0.5.3)
+Requirement already satisfied: scikit-learn==1.6.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 58)) (1.6.1)
+Requirement already satisfied: scipy==1.15.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 59)) (1.15.2)
+Collecting seaborn==0.13.2 (from -r requirements.txt (line 60))
+  Downloading seaborn-0.13.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting sentence-transformers==3.4.1 (from -r requirements.txt (line 61))
+  Downloading sentence_transformers-3.4.1-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: shellingham==1.5.4 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 62)) (1.5.4)
+Requirement already satisfied: six==1.17.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 63)) (1.17.0)
+Collecting sklearn-compat==0.1.3 (from -r requirements.txt (line 64))
+  Downloading sklearn_compat-0.1.3-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: smart-open==7.1.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 65)) (7.1.0)
+Requirement already satisfied: spacy==3.8.4 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 66)) (3.8.4)
+Requirement already satisfied: spacy-legacy==3.0.12 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 67)) (3.0.12)
+Requirement already satisfied: spacy-loggers==1.0.5 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 68)) (1.0.5)
+Requirement already satisfied: srsly==2.5.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 69)) (2.5.1)
+Requirement already satisfied: sympy==1.13.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 70)) (1.13.1)
+Requirement already satisfied: thinc==8.3.4 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 71)) (8.3.4)
+Collecting threadpoolctl==3.5.0 (from -r requirements.txt (line 72))
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting tokenizers==0.21.0 (from -r requirements.txt (line 73))
+  Downloading tokenizers-0.21.0-cp39-abi3-win_amd64.whl.metadata (6.9 kB)
+Requirement already satisfied: torch==2.6.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 74)) (2.6.0)
+Requirement already satisfied: tqdm==4.67.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 75)) (4.67.1)
+Collecting transformers==4.49.0 (from -r requirements.txt (line 76))
+  Downloading transformers-4.49.0-py3-none-any.whl.metadata (44 kB)
+Requirement already satisfied: typer==0.15.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 77)) (0.15.2)
+Collecting typing_extensions==4.12.2 (from -r requirements.txt (line 78))
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting tzdata==2025.1 (from -r requirements.txt (line 79))
+  Downloading tzdata-2025.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: urllib3==2.3.0 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 80)) (2.3.0)
+Requirement already satisfied: wasabi==1.1.3 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 81)) (1.1.3)
+Requirement already satisfied: weasel==0.4.1 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 82)) (0.4.1)
+Requirement already satisfied: Werkzeug==3.1.3 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 83)) (3.1.3)
+Requirement already satisfied: wrapt==1.17.2 in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from -r requirements.txt (line 84)) (1.17.2)
+Requirement already satisfied: setuptools in c:\users\pavan\appdata\local\programs\python\python310\lib\site-packages (from marisa-trie==1.2.1->-r requirements.txt (line 31)) (57.4.0)
+Downloading cloudpathlib-0.20.0-py3-none-any.whl (52 kB)
+Downloading contourpy-1.3.1-cp310-cp310-win_amd64.whl (218 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading filelock-3.17.0-py3-none-any.whl (16 kB)
+Downloading fonttools-4.56.0-cp310-cp310-win_amd64.whl (2.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 9.5 MB/s eta 0:00:00
+Downloading fsspec-2025.2.0-py3-none-any.whl (184 kB)
+Downloading huggingface_hub-0.29.1-py3-none-any.whl (468 kB)
+Downloading imbalanced_learn-0.13.0-py3-none-any.whl (238 kB)
+Downloading imblearn-0.0-py2.py3-none-any.whl (1.9 kB)
+Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)
+Downloading kiwisolver-1.4.8-cp310-cp310-win_amd64.whl (71 kB)
+Downloading levenshtein-0.26.1-cp310-cp310-win_amd64.whl (98 kB)
+Downloading matplotlib-3.10.1-cp310-cp310-win_amd64.whl (8.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 9.2 MB/s eta 0:00:00
+Downloading numpy-2.2.3-cp310-cp310-win_amd64.whl (12.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.9/12.9 MB 9.5 MB/s eta 0:00:00
+Downloading pyparsing-3.2.1-py3-none-any.whl (107 kB)
+Downloading python_Levenshtein-0.26.1-py3-none-any.whl (9.4 kB)
+Downloading pytz-2025.1-py2.py3-none-any.whl (507 kB)
+Downloading rapidfuzz-3.12.1-cp310-cp310-win_amd64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 9.6 MB/s eta 0:00:00
+Downloading seaborn-0.13.2-py3-none-any.whl (294 kB)
+Downloading sentence_transformers-3.4.1-py3-none-any.whl (275 kB)
+Downloading sklearn_compat-0.1.3-py3-none-any.whl (18 kB)
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tokenizers-0.21.0-cp39-abi3-win_amd64.whl (2.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 10.5 MB/s eta 0:00:00
+Downloading transformers-4.49.0-py3-none-any.whl (10.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.0/10.0 MB 10.3 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading tzdata-2025.1-py2.py3-none-any.whl (346 kB)
+Installing collected packages: pytz, en_core_web_sm, tzdata, typing_extensions, threadpoolctl, RapidFuzz, pyparsing, numpy, kiwisolver, Jinja2, fsspec, fonttools, filelock, cycler, Levenshtein, huggingface-hub, contourpy, cloudpathlib, tokenizers, python-Levenshtein, matplotlib, transformers, sklearn-compat, seaborn, sentence-transformers, imbalanced-learn, imblearn
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2025.2
+    Uninstalling pytz-2025.2:
+      Successfully uninstalled pytz-2025.2
+  Attempting uninstall: tzdata
+    Found existing installation: tzdata 2025.2
+    Uninstalling tzdata-2025.2:
+      Successfully uninstalled tzdata-2025.2
+  Attempting uninstall: typing_extensions
+    Found existing installation: typing_extensions 4.13.0
+    Uninstalling typing_extensions-4.13.0:
+      Successfully uninstalled typing_extensions-4.13.0
+  Attempting uninstall: threadpoolctl
+    Found existing installation: threadpoolctl 3.6.0
+    Uninstalling threadpoolctl-3.6.0:
+      Successfully uninstalled threadpoolctl-3.6.0
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.2.4
+    Uninstalling numpy-2.2.4:
+      Successfully uninstalled numpy-2.2.4
+  Attempting uninstall: Jinja2
+    Found existing installation: Jinja2 3.1.6
+    Uninstalling Jinja2-3.1.6:
+      Successfully uninstalled Jinja2-3.1.6
+  Attempting uninstall: fsspec
+    Found existing installation: fsspec 2025.3.0
+    Uninstalling fsspec-2025.3.0:
+      Successfully uninstalled fsspec-2025.3.0
+  Attempting uninstall: filelock
+    Found existing installation: filelock 3.18.0
+    Uninstalling filelock-3.18.0:
+      Successfully uninstalled filelock-3.18.0
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface-hub 0.29.3
+    Uninstalling huggingface-hub-0.29.3:
+      Successfully uninstalled huggingface-hub-0.29.3
+  Attempting uninstall: cloudpathlib
+    Found existing installation: cloudpathlib 0.21.0
+    Uninstalling cloudpathlib-0.21.0:
+      Successfully uninstalled cloudpathlib-0.21.0
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.21.1
+    Uninstalling tokenizers-0.21.1:
+      Successfully uninstalled tokenizers-0.21.1
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.50.2
+    Uninstalling transformers-4.50.2:
+      Successfully uninstalled transformers-4.50.2
+  Attempting uninstall: sentence-transformers
+    Found existing installation: sentence-transformers 4.0.1
+    Uninstalling sentence-transformers-4.0.1:
+      Successfully uninstalled sentence-transformers-4.0.1
+Successfully installed Jinja2-3.1.5 Levenshtein-0.26.1 RapidFuzz-3.12.1 cloudpathlib-0.20.0 contourpy-1.3.1 cycler-0.12.1 en_core_web_sm-3.8.0 filelock-3.17.0 fonttools-4.56.0 fsspec-2025.2.0 huggingface-hub-0.29.1 imbalanced-learn-0.13.0 imblearn-0.0 kiwisolver-1.4.8 matplotlib-3.10.1 numpy-2.2.3 pyparsing-3.2.1 python-Levenshtein-0.26.1 pytz-2025.1 seaborn-0.13.2 sentence-transformers-3.4.1 sklearn-compat-0.1.3 threadpoolctl-3.5.0 tokenizers-0.21.0 transformers-4.49.0 typing_extensions-4.12.2 tzdata-2025.1
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>pip install -r requirements.txt
+Collecting en_core_web_sm@ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85 (from -r requirements.txt (line 14))
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━ 11.0/12.8 MB 7.2 MB/s eta 0:00:01
+ERROR: Operation cancelled by user
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>^X
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+modules.json: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 349/349 [00:00<?, ?B/s]
+C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py:142: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\pavan\.cache\huggingface\hub\models--sentence-transformers--all-MiniLM-L6-v2. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+config_sentence_transformers.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 116/116 [00:00<?, ?B/s]
+README.md: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10.5k/10.5k [00:00<?, ?B/s]
+sentence_bert_config.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 53.0/53.0 [00:00<00:00, 44.5kB/s]
+config.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 612/612 [00:00<?, ?B/s]
+Traceback (most recent call last):
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001E413575B10>: Failed to resolve 'cdn-lfs.hf.co' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743077050&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzA3NzA1MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9zZW50ZW5jZS10cmFuc2Zvcm1lcnMvYWxsLU1pbmlMTS1MNi12Mi81M2FhNTExNzJkMTQyYzg5ZDkwMTJjY2UxNWFlNGQ2Y2MwY2E2ODk1ODk1MTE0Mzc5Y2FjYjRmYWIxMjhkOWRiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=B3rLIkEKxe7BDHhE1i4oscbX-2hcmkCEpa9Nqwm8-8tovtf2480svD6My6Xi0XJpK-oQM8hjqxZcT9MN7yv8kess2cyV1nD1Zt3Z7ZccXsJpf4UDhykqU04mXmX0oZlLflyypW~CAtPg1dmZ8BU~NMHo64FwHiMdeesWvLKqWfok5r~1bgHs3YyyLYYEVAVRc3sRtmDf6qo2sQLn064Qc6DExhbtuG-24ciYqySOJt~uXZORmsz~4bF8r8d0lzNkgrVV~Wh4-9Em9GTapYjGau~t9l2Ddfu2S7II~4I5LrM8P448gDFEUEzxEi7XYy~IsX~-P6wN9HCXdgo5CdT9MA__&Key-Pair-Id=K3RPWS32NSSJCE (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E413575B10>: Failed to resolve 'cdn-lfs.hf.co' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT\app.py", line 51, in <module>
+    model = SentenceTransformer('all-MiniLM-L6-v2')
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\sentence_transformers\SentenceTransformer.py", line 308, in __init__
+    modules, self.module_kwargs = self._load_sbert_model(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\sentence_transformers\SentenceTransformer.py", line 1739, in _load_sbert_model
+    module = module_class(model_name_or_path, cache_dir=cache_folder, backend=self.backend, **kwargs)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\sentence_transformers\models\Transformer.py", line 81, in __init__
+    self._load_model(model_name_or_path, config, cache_dir, backend, is_peft_model, **model_args)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\sentence_transformers\models\Transformer.py", line 181, in _load_model
+    self.auto_model = AutoModel.from_pretrained(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\modeling_utils.py", line 262, in _wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\modeling_utils.py", line 3854, in from_pretrained
+    resolved_archive_file = cached_file(pretrained_model_name_or_path, filename, **cached_file_kwargs)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 342, in cached_file
+    resolved_file = hf_hub_download(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py", line 1011, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py", line 1547, in _download_to_tmp_and_move
+    http_get(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py", line 371, in http_get
+    r = _request_wrapper(
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py", line 303, in _request_wrapper
+    response = get_session().request(method=method, url=url, **params)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+  File "C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: (MaxRetryError('HTTPSConnectionPool(host=\'cdn-lfs.hf.co\', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743077050&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzA3NzA1MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9zZW50ZW5jZS10cmFuc2Zvcm1lcnMvYWxsLU1pbmlMTS1MNi12Mi81M2FhNTExNzJkMTQyYzg5ZDkwMTJjY2UxNWFlNGQ2Y2MwY2E2ODk1ODk1MTE0Mzc5Y2FjYjRmYWIxMjhkOWRiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=B3rLIkEKxe7BDHhE1i4oscbX-2hcmkCEpa9Nqwm8-8tovtf2480svD6My6Xi0XJpK-oQM8hjqxZcT9MN7yv8kess2cyV1nD1Zt3Z7ZccXsJpf4UDhykqU04mXmX0oZlLflyypW~CAtPg1dmZ8BU~NMHo64FwHiMdeesWvLKqWfok5r~1bgHs3YyyLYYEVAVRc3sRtmDf6qo2sQLn064Qc6DExhbtuG-24ciYqySOJt~uXZORmsz~4bF8r8d0lzNkgrVV~Wh4-9Em9GTapYjGau~t9l2Ddfu2S7II~4I5LrM8P448gDFEUEzxEi7XYy~IsX~-P6wN9HCXdgo5CdT9MA__&Key-Pair-Id=K3RPWS32NSSJCE (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E413575B10>: Failed to resolve \'cdn-lfs.hf.co\' ([Errno 11001] getaddrinfo failed)"))'), '(Request ID: 5779e2f3-a553-4759-9bdd-441888557c22)')
+
+(venv) C:\Users\pavan\Desktop\MEDICAL CHATBOT\MEDICAL CHATBOT>python app.py
+model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 90.9M/90.9M [00:10<00:00, 9.07MB/s]
+C:\Users\pavan\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\file_download.py:142: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\pavan\.cache\huggingface\hub\models--sentence-transformers--all-MiniLM-L6-v2. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+tokenizer_config.json: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 350/350 [00:00<?, ?B/s]
+vocab.txt: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 232k/232k [00:00<00:00, 3.46MB/s]
+tokenizer.json: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 466k/466k [00:00<00:00, 6.48MB/s]
+special_tokens_map.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 112/112 [00:00<?, ?B/s]
+config.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 190/190 [00:00<?, ?B/s]
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 992-874-669
+127.0.0.1 - - [27/Mar/2025 16:55:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 16:55:18] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [27/Mar/2025 16:55:35] "GET /get?msg=siva&symptoms=&lat=17.498995845335763&lon=78.39592993740504 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 16:55:35] "GET /get?msg=34&symptoms=&lat=17.498995845335763&lon=78.39592993740504 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 16:55:42] "GET /get?msg=34&symptoms=&lat=17.498995845335763&lon=78.39592993740504 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 16:55:45] "GET /get?msg=male&symptoms=&lat=17.498995845335763&lon=78.39592993740504 HTTP/1.1" 200 -
+Input Phrases: ["i'm feeling cold cough"]
+Similarities for phrase 'i'm feeling cold cough': tensor([ 0.3505,  0.2287,  0.2260,  0.2887,  0.5237,  0.6307,  0.3075,  0.3834,
+         0.1341,  0.2103,  0.1654,  0.3811,  0.1438,  0.0597,  0.4092,  0.1377,
+         0.3423,  0.3295,  0.2921,  0.1103,  0.3484,  0.1322,  0.3003,  0.0916,
+         0.3482,  0.5842,  0.3690,  0.2093,  0.4254,  0.3223,  0.2430,  0.3188,
+         0.3087,  0.4433,  0.1745,  0.1380,  0.4566,  0.2599,  0.2063,  0.2922,
+         0.1974,  0.3351,  0.2753,  0.4120,  0.1485,  0.1168,  0.1461,  0.0742,
+         0.3342,  0.2385,  0.3051,  0.1046,  0.2398,  0.4641,  0.1679,  0.2951,
+         0.3029,  0.1628,  0.4454,  0.1592,  0.1672,  0.2645,  0.1116,  0.1477,
+         0.2193,  0.3555,  0.3033,  0.3726,  0.2183,  0.0583,  0.3613,  0.3011,
+         0.2354,  0.1768,  0.0711,  0.3320,  0.1812,  0.0240,  0.2641,  0.0982,
+         0.3756,  0.2784,  0.3038,  0.2768,  0.2859,  0.2237,  0.0844,  0.0540,
+         0.2542,  0.1644,  0.2024,  0.2600,  0.1402,  0.1441,  0.0723,  0.3111,
+         0.0846,  0.2406,  0.3515,  0.3860,  0.0416,  0.1028,  0.3213,  0.0784,
+        -0.0385,  0.1336,  0.2767,  0.0818,  0.0509,  0.1578,  0.1761,  0.1262,
+         0.0732,  0.0972,  0.1257,  0.2729,  0.2279,  0.1278, -0.0072,  0.1489,
+         0.1353,  0.2889,  0.3394,  0.1682,  0.1780,  0.1094,  0.1369,  0.1975,
+         0.0455,  0.2372,  0.1944,  0.3166,  0.1758])
+Top 3 symptoms for 'i'm feeling cold cough': [('cold', 0.630657434463501), ('cough', 0.584220826625824), ('shivering', 0.5237166881561279)]
+Matched Symptoms: ['cold']
+['cold']
+127.0.0.1 - - [27/Mar/2025 16:55:58] "GET /get?msg=I'm%20feeling%20cold%20cough%20&symptoms=&lat=17.498995845335763&lon=78.39592993740504 HTTP/1.1" 200 -
+Malaria 0.9125
+Allergy 0.925
+Cold Fever 0.9111111111111111
+Common Cold 0.90625
+Dengue 0.9071428571428571
+Tuberculosis 0.9058823529411765
+Typhoid 0.9090909090909091
+Pneumonia 0.9090909090909091
+Highest accuracy disease: Allergy with accuracy: 0.925
+['Malaria', 'Common Cold', 'Dengue', 'Typhoid', 'Allergy', 'Pneumonia', 'Tuberculosis', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 16:56:12] "GET /get?msg=no&symptoms=&lat=17.499011393106496&lon=78.39595581429651 HTTP/1.1" 200 -
+Malaria 0.5700000000000001
+Cold Fever 0.7600000000000001
+Common Cold 0.5566666666666668
+Dengue 0.7466666666666667
+Tuberculosis 0.5557894736842106
+Typhoid 0.7533333333333334
+Pneumonia 0.5630769230769231
+Chicken pox 0.5630769230769231
+Normal Fever 0.5828571428571429
+Highest accuracy disease: Cold Fever with accuracy: 0.7600000000000001
+['Malaria', 'Common Cold', 'Dengue', 'Typhoid', 'Pneumonia', 'Tuberculosis', 'Chicken pox', 'Normal Fever', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 16:56:25] "GET /get?msg=&symptoms=high_fever,headache,tiredness,none&lat=17.499011393106496&lon=78.39595581429651 HTTP/1.1" 200 -
+['headache', 'high_fever', 'cold', 'tiredness']
+['Normal Fever']
+sn ['Malaria', 'Common Cold', 'Dengue', 'Typhoid', 'Pneumonia', 'Tuberculosis', 'Chicken pox', 'Normal Fever', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 16:56:31] "GET /get?msg=5&symptoms=high_fever,headache,tiredness,none&lat=17.499011393106496&lon=78.39595581429651 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 16:56:38] "GET /get?msg=D&symptoms=high_fever,headache,tiredness,none&lat=17.499011393106496&lon=78.39595581429651 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:07:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:07:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [27/Mar/2025 17:07:52] "GET /get?msg=sai&symptoms=&lat=17.49904573639316&lon=78.39596142624664 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:08:02] "GET /get?msg=21&symptoms=&lat=17.498933240416054&lon=78.39591450829869 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:08:12] "GET /get?msg=male&symptoms=&lat=17.498933240416054&lon=78.39591450829869 HTTP/1.1" 200 -
+Input Phrases: ['fever']
+Similarities for phrase 'fever': tensor([0.2956, 0.4634, 0.3047, 0.1810, 0.5368, 0.5170, 0.2116, 0.3102, 0.1418,
+        0.2439, 0.1809, 0.4372, 0.2306, 0.1918, 0.3266, 0.1196, 0.2826, 0.2978,
+        0.2522, 0.1415, 0.2689, 0.2067, 0.2732, 0.1303, 0.1724, 0.2534, 0.7834,
+        0.1486, 0.2580, 0.4070, 0.2747, 0.2293, 0.2906, 0.3986, 0.3393, 0.2289,
+        0.4123, 0.3055, 0.1557, 0.2345, 0.1504, 0.2988, 0.3583, 0.8173, 0.2525,
+        0.1951, 0.2870, 0.1710, 0.3223, 0.2441, 0.3876, 0.0958, 0.2190, 0.3518,
+        0.2272, 0.2823, 0.3127, 0.2240, 0.2510, 0.1975, 0.2058, 0.1448, 0.1857,
+        0.2855, 0.3202, 0.2717, 0.2570, 0.2735, 0.2042, 0.0638, 0.3568, 0.3068,
+        0.0986, 0.2120, 0.1312, 0.3514, 0.2452, 0.0300, 0.2760, 0.1071, 0.2651,
+        0.1673, 0.2333, 0.1869, 0.2278, 0.1143, 0.0484, 0.0564, 0.2442, 0.2102,
+        0.1770, 0.2173, 0.2152, 0.1170, 0.1861, 0.2467, 0.1602, 0.2122, 0.2730,
+        0.2583, 0.1413, 0.2181, 0.2590, 0.1898, 0.0156, 0.1795, 0.2709, 0.1967,
+        0.1007, 0.1954, 0.1859, 0.1642, 0.1514, 0.2869, 0.1597, 0.3035, 0.3463,
+        0.2014, 0.0641, 0.2778, 0.1669, 0.1842, 0.2439, 0.1717, 0.1893, 0.1036,
+        0.2751, 0.1958, 0.0663, 0.3265, 0.2456, 0.3730, 0.1907])
+Top 3 symptoms for 'fever': [('mild_fever', 0.8173230290412903), ('high_fever', 0.7834131121635437), ('shivering', 0.536826491355896)]
+Matched Symptoms: ['mild_fever']
+['mild_fever']
+127.0.0.1 - - [27/Mar/2025 17:08:20] "GET /get?msg=fever&symptoms=&lat=17.498933240416054&lon=78.39591450829869 HTTP/1.1" 200 -
+Cold Fever 0.9111111111111111
+hepatitis A 0.9090909090909091
+Tuberculosis 0.9058823529411765
+Chicken pox 0.9090909090909091
+Highest accuracy disease: Cold Fever with accuracy: 0.9111111111111111
+['hepatitis A', 'Tuberculosis', 'Chicken pox', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:08:28] "GET /get?msg=no&symptoms=&lat=17.498933240416054&lon=78.39591450829869 HTTP/1.1" 200 -
+Cold Fever 0.46
+hepatitis A 0.45833333333333337
+Hepatitis B 0.45769230769230773
+Common Cold 0.45588235294117646
+Dengue 0.45666666666666667
+Tuberculosis 0.9117647058823529
+Pneumonia 0.45833333333333337
+Chicken pox 0.9181818181818182
+Highest accuracy disease: Chicken pox with accuracy: 0.9181818181818182
+['Common Cold', 'hepatitis A', 'Dengue', 'Pneumonia', 'Tuberculosis', 'Chicken pox', 'Hepatitis B', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:08:37] "GET /get?msg=&symptoms=malaise&lat=17.498917426920194&lon=78.39592124094149 HTTP/1.1" 200 -
+Cold Fever 0.46
+hepatitis A 0.45833333333333337
+Hepatitis B 0.45769230769230773
+Common Cold 0.45588235294117646
+Dengue 0.45666666666666667
+Tuberculosis 0.9117647058823529
+Pneumonia 0.45833333333333337
+Chicken pox 0.9181818181818182
+Highest accuracy disease: Chicken pox with accuracy: 0.9181818181818182
+['Common Cold', 'hepatitis A', 'Dengue', 'Pneumonia', 'Tuberculosis', 'Chicken pox', 'Hepatitis B', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:08:37] "GET /get?msg=&symptoms=malaise&lat=17.498917426920194&lon=78.39592124094149 HTTP/1.1" 200 -
+Cold Fever 0.7050000000000001
+Common Cold 0.6926470588235295
+Dengue 0.4625
+Tuberculosis 0.9235294117647059
+Pneumonia 0.7000000000000001
+Chicken pox 0.4653846153846154
+Highest accuracy disease: Tuberculosis with accuracy: 0.9235294117647059
+['Common Cold', 'Dengue', 'Pneumonia', 'Tuberculosis', 'Chicken pox', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:08:57] "GET /get?msg=&symptoms=malaise,cold,cough&lat=17.498917426920194&lon=78.39592124094149 HTTP/1.1" 200 -
+Cold Fever 0.7050000000000001
+Common Cold 0.6926470588235295
+Dengue 0.4625
+Tuberculosis 0.9235294117647059
+Pneumonia 0.7000000000000001
+Chicken pox 0.4653846153846154
+Highest accuracy disease: Tuberculosis with accuracy: 0.9235294117647059
+['Common Cold', 'Dengue', 'Pneumonia', 'Tuberculosis', 'Chicken pox', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:09:35] "GET /get?msg=D&symptoms=malaise,cold,cough&lat=17.498843182383663&lon=78.39584175084312 HTTP/1.1" 200 -
+Cold Fever 0.7600000000000001
+Common Cold 0.743529411764706
+Tuberculosis 0.7422222222222223
+Pneumonia 0.5630769230769231
+Highest accuracy disease: Cold Fever with accuracy: 0.7600000000000001
+['Common Cold', 'Pneumonia', 'Tuberculosis', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:09:58] "GET /get?msg=&symptoms=malaise,cold,cough,continuous_sneezing&lat=17.498843182383663&lon=78.39584175084312 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:13:07] "POST /reset_session HTTP/1.1" 302 -
+127.0.0.1 - - [27/Mar/2025 17:13:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:13:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:13:14] "GET /get?msg=sai&symptoms=&lat=17.498995845335763&lon=78.39592993740504 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:13:19] "GET /get?msg=21&symptoms=&lat=17.498995845335763&lon=78.39592993740504 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:13:27] "GET /get?msg=male&symptoms=&lat=17.498995845335763&lon=78.39592993740504 HTTP/1.1" 200 -
+Input Phrases: ['fever', 'cough']
+Similarities for phrase 'fever': tensor([0.2956, 0.4634, 0.3047, 0.1810, 0.5368, 0.5170, 0.2116, 0.3102, 0.1418,
+        0.2439, 0.1809, 0.4372, 0.2306, 0.1918, 0.3266, 0.1196, 0.2826, 0.2978,
+        0.2522, 0.1415, 0.2689, 0.2067, 0.2732, 0.1303, 0.1724, 0.2534, 0.7834,
+        0.1486, 0.2580, 0.4070, 0.2747, 0.2293, 0.2906, 0.3986, 0.3393, 0.2289,
+        0.4123, 0.3055, 0.1557, 0.2345, 0.1504, 0.2988, 0.3583, 0.8173, 0.2525,
+        0.1951, 0.2870, 0.1710, 0.3223, 0.2441, 0.3876, 0.0958, 0.2190, 0.3518,
+        0.2272, 0.2823, 0.3127, 0.2240, 0.2510, 0.1975, 0.2058, 0.1448, 0.1857,
+        0.2855, 0.3202, 0.2717, 0.2570, 0.2735, 0.2042, 0.0638, 0.3568, 0.3068,
+        0.0986, 0.2120, 0.1312, 0.3514, 0.2452, 0.0300, 0.2760, 0.1071, 0.2651,
+        0.1673, 0.2333, 0.1869, 0.2278, 0.1143, 0.0484, 0.0564, 0.2442, 0.2102,
+        0.1770, 0.2173, 0.2152, 0.1170, 0.1861, 0.2467, 0.1602, 0.2122, 0.2730,
+        0.2583, 0.1413, 0.2181, 0.2590, 0.1898, 0.0156, 0.1795, 0.2709, 0.1967,
+        0.1007, 0.1954, 0.1859, 0.1642, 0.1514, 0.2869, 0.1597, 0.3035, 0.3463,
+        0.2014, 0.0641, 0.2778, 0.1669, 0.1842, 0.2439, 0.1717, 0.1893, 0.1036,
+        0.2751, 0.1958, 0.0663, 0.3265, 0.2456, 0.3730, 0.1907])
+Top 3 symptoms for 'fever': [('mild_fever', 0.8173230290412903), ('high_fever', 0.7834131121635437), ('shivering', 0.536826491355896)]
+Similarities for phrase 'cough': tensor([ 0.4311,  0.2153,  0.2237,  0.2994,  0.3914,  0.5307,  0.2627,  0.3606,
+         0.1441,  0.2208,  0.2171,  0.2957,  0.1344,  0.0713,  0.2410,  0.1108,
+         0.2670,  0.2358,  0.1873,  0.1116,  0.2094,  0.0906,  0.2794,  0.0877,
+         0.4859,  1.0000,  0.2699,  0.2682,  0.3359,  0.2294,  0.1053,  0.2536,
+         0.2103,  0.3697,  0.1791,  0.1530,  0.2852,  0.2074,  0.2556,  0.2961,
+         0.1428,  0.3339,  0.2811,  0.2650,  0.1271,  0.1308,  0.1322,  0.0893,
+         0.2744,  0.2404,  0.2957,  0.1606,  0.2495,  0.3638,  0.1537,  0.2637,
+         0.2670,  0.2131,  0.4189,  0.1532,  0.1287,  0.1775,  0.1329,  0.2036,
+         0.2257,  0.2998,  0.1488,  0.2823,  0.2219,  0.1582,  0.3076,  0.2527,
+         0.2503,  0.2240,  0.1210,  0.2883,  0.1734,  0.0901,  0.1239,  0.1421,
+         0.3507,  0.2270,  0.2325,  0.2069,  0.2276,  0.0918,  0.0425,  0.0390,
+         0.1497,  0.1713,  0.2100,  0.1759,  0.0989,  0.0299,  0.1176,  0.3090,
+         0.1372,  0.2292,  0.2489,  0.3367,  0.0680,  0.1399,  0.3463,  0.0942,
+         0.0455,  0.1440,  0.1948,  0.0939,  0.0894,  0.1521,  0.1624,  0.1578,
+         0.0526,  0.0375,  0.0909,  0.3229,  0.2201,  0.1775, -0.0143,  0.1799,
+         0.1516,  0.1752,  0.3407,  0.1231,  0.2515,  0.1678,  0.1494,  0.1742,
+         0.1163,  0.1975,  0.2597,  0.2565,  0.1198])
+Top 3 symptoms for 'cough': [('cough', 1.0), ('cold', 0.5307217836380005), ('continuous_cough', 0.48591047525405884)]
+Matched Symptoms: ['mild_fever', 'cough']
+['mild_fever', 'cough']
+127.0.0.1 - - [27/Mar/2025 17:13:48] "GET /get?msg=fever,cough&symptoms=&lat=17.499048987124464&lon=78.39600497682403 HTTP/1.1" 200 -
+Normal Cough 0.48333333333333334
+GERD 0.4642857142857143
+Cold Fever 0.9222222222222223
+hepatitis A 0.45833333333333337
+Common Cold 0.45588235294117646
+Tuberculosis 0.9117647058823529
+Pneumonia 0.45833333333333337
+Chicken pox 0.45833333333333337
+Bronchial Asthma 0.4642857142857143
+Highest accuracy disease: Cold Fever with accuracy: 0.9222222222222223
+['Common Cold', 'hepatitis A', 'Normal Cough', 'Pneumonia', 'Tuberculosis', 'Chicken pox', 'Bronchial Asthma', 'GERD', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:13:53] "GET /get?msg=no&symptoms=&lat=17.499048987124464&lon=78.39600497682403 HTTP/1.1" 200 -
+Cold Fever 0.62
+Tuberculosis 0.611111111111111
+Highest accuracy disease: Cold Fever with accuracy: 0.62
+['Tuberculosis', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:14:05] "GET /get?msg=&symptoms=none&lat=17.499048987124464&lon=78.39600497682403 HTTP/1.1" 200 -
+['mild_fever', 'cough']
+['Normal Cough']
+sn ['Tuberculosis', 'Cold Fever']
+127.0.0.1 - - [27/Mar/2025 17:14:16] "GET /get?msg=5&symptoms=none&lat=17.499048987124464&lon=78.39600497682403 HTTP/1.1" 200 -
+127.0.0.1 - - [27/Mar/2025 17:14:40] "GET /get?msg=q&symptoms=none&lat=17.49881174969801&lon=78.39582491819885 HTTP/1.1" 200 -
+

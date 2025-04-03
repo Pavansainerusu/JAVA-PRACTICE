@@ -1,0 +1,25 @@
+class Myclass
+{
+	public static void main(String[]args)
+	{
+		
+	}
+}
+class Demo
+{
+	void FibonacciWithRecurtion(int a, int b, int c, int d, int n, int start)
+	{
+	if(start=n+1)
+	{
+	}
+	else
+	{
+		System.out.println(a+" ");
+		d=a+b+c;
+		a=b;
+		b=c;
+		c=d;
+		FibonacciWithRecurtion(a,b,c,d,n,start);
+	}
+	
+}	,
