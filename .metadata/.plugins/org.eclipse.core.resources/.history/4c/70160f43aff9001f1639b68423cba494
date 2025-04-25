@@ -1,0 +1,17 @@
+import java.lang.*;
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		myclass m1=new myclass();
+		myclass m2=new myclass();
+		myclass m3=new myclass();
+		myclass m4=new myclass();
+	
+	}
+
+}
+class Demo extends Thread
+{
+	
+}

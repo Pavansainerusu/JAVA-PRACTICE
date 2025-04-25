@@ -1,0 +1,8 @@
+package collection.linkedlist;
+
+public class MyCode {
+	public static void main(String args[])
+	{
+		LinkedList<Object> ll=new LinkedList<Object>();
+	}
+}

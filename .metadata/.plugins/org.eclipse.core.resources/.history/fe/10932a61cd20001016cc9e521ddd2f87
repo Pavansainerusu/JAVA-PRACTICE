@@ -1,0 +1,35 @@
+package wait;
+
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        SharedResource resource = new SharedResource();
+
+        // Thread 1 will wait for a signal
+        Thread t1 = new Thread(resource::waitForSignal, "Thread 1");
+        t1.start();
+
+        // Wait for a second before sending the signal
+        Thread.sleep(1000);
+
+        // Thread 2 sends the signal
+        resource.sendSignal();
+    }
+}
+class SharedResource {
+    // Method that waits for a signal
+    public synchronized void waitForSignal() {
+        try {
+            System.out.println(Thread.currentThread().getName() + " is waiting...");
+            wait();  // This makes the current thread wait until it's notified
+            System.out.println(Thread.currentThread().getName() + " has received the signal!");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Method to send the signal to wake the waiting thread
+    public synchronized void sendSignal() {
+        notify();  // Notifies one waiting thread to wake up
+    }
+}
+

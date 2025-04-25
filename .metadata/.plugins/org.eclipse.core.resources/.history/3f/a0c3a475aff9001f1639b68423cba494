@@ -1,0 +1,25 @@
+import java.util.*;
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		myclass m1=new myclass();
+		myclass m2=new myclass();
+		myclass m3=new myclass();
+		myclass m4=new myclass();
+		for(int x=1;x<=5;x++)
+		{
+			System.out.println(Thread.currentThread().getName()+" "+x);
+		}
+	
+	}
+
+}
+class myclass extends Thread
+{
+	public void run()
+	for(int x=1;x<=5;x++)
+	{
+		System.out.println(Thread.currentThread().getName()+" "+x);
+	}
+}
