@@ -1,0 +1,9 @@
+Êþº¾   = 
+       java/lang/Object <init> ()V	  	  
+ 
+  java/lang/System out Ljava/io/PrintStream;  	hello all
+       java/io/PrintStream  println (Ljava/lang/String;)V    MyClass Code LineNumberTable main ([Ljava/lang/String;)V 
+SourceFile 
+First.java                       *· ±            	       %     	²  
+¶ ±       
+            
