@@ -1,4 +1,4 @@
-class Main
+class Main changes
 {
 	public static void main(String[]args)
 	{
