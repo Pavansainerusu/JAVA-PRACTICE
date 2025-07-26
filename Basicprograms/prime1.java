@@ -13,7 +13,7 @@ class prime
 	sum=sum+rem;
 	else
 	pro=pro*rem;
-	}
+	
 
 	int result=sum+pro;
 	System.ot.println("the number is"+result);
@@ -26,5 +26,5 @@ class prime
 	System.out.println(count1==2?"Its a prime number":"Its not a prime number");
 	}
 		
-		
+}	
 	
